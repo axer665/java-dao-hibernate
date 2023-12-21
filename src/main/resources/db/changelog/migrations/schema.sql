@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS PERSONS;
+
+CREATE TABLE PERSONS
+(
+	id SERIAL PRIMARY KEY,
+	"name" VARCHAR(50),
+	surname VARCHAR(50),
+	age INTEGER,
+	phone_number VARCHAR(12),
+	city_of_living VARCHAR(50)
+);
