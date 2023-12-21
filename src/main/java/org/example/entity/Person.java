@@ -15,7 +15,8 @@ import lombok.NoArgsConstructor;
 @Table(name = "PERSONS")
 public class Person {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(name = "id", nullable = false)
     private Long id;
 
     @Column(nullable = false)
@@ -25,7 +26,7 @@ public class Person {
     private String surname;
 
     @Column(nullable = false)
-    private int age;
+    private Integer age;
 
     @Column(nullable = false)
     private String phone_number;
